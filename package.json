@@ -6,9 +6,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "gh-pages-deploy",
+    "deploy": "gh-pages -d dist",
     "clean-source": "rimraf README.md src webroot package.json"
   },
+  "homepage": "https://IliassKouhhiz.github.io/portfolio",
   "dependencies": {
     "core-js": "^3.6.5",
     "particles.js": "^2.0.0",
