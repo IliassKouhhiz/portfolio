@@ -2,13 +2,12 @@
   <div class="home">
     <backgroundParticles backColor="orange"></backgroundParticles>
     <header class="header">
-      <a href="/"
+      <div @click="this.$router.push({ path: '/' })"
         ><img
           src="@\assets\media\logo_orange_S.svg"
           alt="Logo"
-          class="logo"
-          @click="home()"
-      /></a>
+          class="logo" 
+      /></div>
       <nav-bar nav-color="orange" :pageId="id"></nav-bar>
     </header>
     <img
@@ -121,11 +120,6 @@ export default {
     return {
       id: "homepage",
     };
-  },
-  methods: {
-    home() {
-      this.$router.push({ path: "/" });
-    },
   },
 };
 </script>
@@ -390,7 +384,7 @@ p {
     transform: scale(15);
     z-index: -2;
     top: 50%;
-    opacity: 50%;
+    opacity: 60%;
     overflow: hidden;
   }
 }

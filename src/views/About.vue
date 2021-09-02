@@ -8,7 +8,7 @@
       <nav-bar nav-color="yellow" :pageId="id"></nav-bar>
     </header>
     <div class="image">
-      <img src="@\assets\media\foto_profilo.png" alt="image" class="img" />
+      <img src="@\assets\media\foto_profilo.png" alt="image" class="img" loading="lazy" />
     </div>
     <h2 class="h2">My name is <strong>Iliass</strong></h2>
     <p class="copy-l">
