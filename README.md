@@ -1,24 +1,7 @@
 # portfolio
 
-## Project setup
-```
-npm install
-```
+### Description
 
-### Compiles and hot-reloads for development
 ```
-npm run serve
+Personal website version 1.0.0
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
