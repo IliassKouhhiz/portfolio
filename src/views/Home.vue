@@ -384,7 +384,7 @@ p {
     transform: scale(15);
     z-index: -2;
     top: 50%;
-    opacity: 60%;
+    //opacity: 60%;
     overflow: hidden;
   }
 }
