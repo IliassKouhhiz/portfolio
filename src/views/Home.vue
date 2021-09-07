@@ -2,12 +2,9 @@
   <div class="home">
     <backgroundParticles backColor="orange"></backgroundParticles>
     <header class="header">
-      <div @click="this.$router.push({ path: '/' })"
-        ><img
-          src="@\assets\media\logo_orange_S.svg"
-          alt="Logo"
-          class="logo" 
-      /></div>
+      <div href="https://iliasskouhhiz.github.io/portfolio/#/">
+        <img src="@\assets\media\logo_orange_S.svg" alt="Logo" class="logo" />
+      </div>
       <nav-bar nav-color="orange" :pageId="id"></nav-bar>
     </header>
     <img
@@ -384,7 +381,7 @@ p {
     transform: scale(15);
     z-index: -2;
     top: 50%;
-    //opacity: 60%;
+    opacity: 50%;
     overflow: hidden;
   }
 }

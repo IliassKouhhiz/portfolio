@@ -7,9 +7,9 @@
         @click="changeState()"
       >
         <div class="hamburger">
-          <div class="line"></div>
+          <div class="line" id="line1"></div>
           <div class="line mid"></div>
-          <div class="line"></div>
+          <div class="line" id="line2"></div>
         </div>
       </button>
       <nav class="nav_s nav_s_orange" :data-active="nav_button_status">
@@ -172,12 +172,23 @@ export default {
       let target_1 = document.getElementById("projects_s");
       let target_2 = document.getElementById("projects_l");
       let target = document.getElementById("projects");
+      let line1 = document.getElementById("line1");
+      let line2 = document.getElementById("line2");
 
       if (this.pageId === "homepage") {
         target.scrollIntoView();
+        this.nav_button_status = "false";
+        line1.style.visibility = "visible";
+        line2.style.visibility = "visible";
       } else {
-        target_1.setAttribute("href", "/");
-        target_2.setAttribute("href", "/");
+        target_1.setAttribute(
+          "href",
+          "https://iliasskouhhiz.github.io/portfolio/#/"
+        );
+        target_2.setAttribute(
+          "href",
+          "https://iliasskouhhiz.github.io/portfolio/#/"
+        );
       }
     },
   },

@@ -2,14 +2,19 @@
   <div class="about">
     <backgroundParticles backColor="yellow"></backgroundParticles>
     <header class="header">
-      <a href="/"
+      <a href="https://iliasskouhhiz.github.io/portfolio/#/"
         ><img src="@\assets\media\logo_blue_S.svg" alt="Logo" class="logo"
       /></a>
       <nav-bar nav-color="yellow" :pageId="id"></nav-bar>
     </header>
-    <div class="image">
-      <img src="@\assets\media\foto_profilo.png" alt="image" class="img" loading="lazy" />
-    </div>
+
+    <img
+      src="@\assets\media\foto_profilo1.png"
+      alt="image"
+      class="img"
+      loading="lazy"
+    />
+    <div class="image"></div>
     <h2 class="h2">My name is <strong>Iliass</strong></h2>
     <p class="copy-l">
       I am a <strong>junior front-end developer</strong> and
@@ -103,16 +108,19 @@ body {
 .image {
   width: 330px;
   height: 330px;
-  display: flex;
   margin: 25px auto 0px;
   border-radius: 160px;
-  border: 10px solid $p-blue;
+  border: 11px solid $p-blue;
   background-color: transparent;
-
-  .img {
-    margin-bottom: -3px;
-    margin-left: -2px;
-  }
+  position: relative;
+}
+.img {
+  margin: 30px auto;
+  max-width: 310px;
+  max-height: 310px;
+  position: absolute;
+  left: calc(50% - 155px);
+  margin-top: 10px;
 }
 
 .h2 {
