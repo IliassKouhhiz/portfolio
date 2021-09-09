@@ -458,11 +458,9 @@ canvas {
   align-items: center;
 }
 .header .logo {
-  min-height: 50px;
+  height: 50px;
   width: auto;
   cursor: pointer;
-  position: relative;
-  visibility: visible;
 }
 p {
   font: 25px Gilroy light;
