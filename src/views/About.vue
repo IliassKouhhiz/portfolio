@@ -2,16 +2,16 @@
   <div class="about">
     <backgroundParticles backColor="yellow"></backgroundParticles>
     <header class="header">
-      <a href="https://iliasskouhhiz.github.io/portfolio/#/"
+      <a @click="logo()"
         ><img src="@\assets\media\logo_blue_S.svg" alt="Logo" class="logo"
       /></a>
       <nav-bar nav-color="yellow" :pageId="id"></nav-bar>
     </header>
 
     <img
-      src="@\assets\media\foto_profilo1.png"
+      src="@\assets\media\foto_profilo.png"
       alt="image"
-      class="img"
+      class="img_pro"
       loading="lazy"
     />
     <div class="image"></div>
@@ -89,7 +89,11 @@ export default {
       id: "aboutpage",
     };
   },
-  methods: {},
+  methods: {
+    logo() {
+      this.$router.push("/");
+    },
+  },
 };
 </script>
 
@@ -101,8 +105,11 @@ $p-yellow: #f2b950;
 $t-bold: "Gilroy Extra Bold";
 $t-regular: "Gilroy light";
 
-body {
+.about {
   background-color: $p-orange;
+  top: 0%;
+  position: absolute;
+  z-index: -1;
 }
 
 .image {
@@ -114,13 +121,13 @@ body {
   background-color: transparent;
   position: relative;
 }
-.img {
+.img_pro {
   margin: 30px auto;
-  max-width: 310px;
-  max-height: 310px;
+  max-width: 330px;
+  max-height: 330px;
   position: absolute;
-  left: calc(50% - 155px);
-  margin-top: 10px;
+  left: calc(50% - 165px);
+  margin-top: 0px;
 }
 
 .h2 {

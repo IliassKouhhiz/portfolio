@@ -2,7 +2,7 @@
   <div class="home">
     <backgroundParticles backColor="orange"></backgroundParticles>
     <header class="header">
-      <div href="https://iliasskouhhiz.github.io/portfolio/#/">
+      <div @click="logo()">
         <img src="@\assets\media\logo_orange_S.svg" alt="Logo" class="logo" />
       </div>
       <nav-bar nav-color="orange" :pageId="id"></nav-bar>
@@ -118,6 +118,11 @@ export default {
       id: "homepage",
     };
   },
+  methods: {
+    logo() {
+      this.$router.go();
+    },
+  },
 };
 </script>
 
@@ -148,8 +153,11 @@ $p: 25px;
   }
 }
 
-body {
+.home {
   background-color: $p-grey;
+  top: 0%;
+  position: absolute;
+  z-index: -1;
 }
 
 .header {
@@ -380,7 +388,7 @@ p {
     height: 50px;
     transform: scale(15);
     z-index: -2;
-    top: 50%;
+    top: 345px;
     opacity: 50%;
     overflow: hidden;
   }

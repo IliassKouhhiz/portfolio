@@ -17,7 +17,7 @@
           <li class="nav_menu_s_item">
             <a @click="projects()" id="projects_s">{{ changeNav }}</a>
           </li>
-          <li class="nav_menu_s_item"><a href="#/about">About</a></li>
+          <li class="nav_menu_s_item"><a @click="about()">About</a></li>
           <li class="nav_menu_s_item">
             <p @click="featureErr('s')">Resume</p>
           </li>
@@ -81,7 +81,6 @@ export default {
         line1.style.visibility = "visible";
         line2.style.visibility = "visible";
       }
-      console.log(this.nav_button_status);
     },
     changeColor() {
       let nav = document.querySelector(".nav_s");
@@ -181,22 +180,24 @@ export default {
         line1.style.visibility = "visible";
         line2.style.visibility = "visible";
       } else {
-        target_1.setAttribute(
-          "href",
-          "https://iliasskouhhiz.github.io/portfolio/#/"
-        );
-        target_2.setAttribute(
-          "href",
-          "https://iliasskouhhiz.github.io/portfolio/#/"
-        );
+        target_1.setAttribute("href", "/portfolio")
+        target_2.setAttribute("href", "/portfolio")
+        this.nav_button_status = "false";
       }
     },
+    about() {
+      let line1 = document.getElementById("line1");
+      let line2 = document.getElementById("line2");
+
+      this.$router.push("/about");
+      this.nav_button_status = "false";
+      line1.style.visibility = "visible";
+      line2.style.visibility = "visible";
+    }
   },
   mounted() {
     this.changeColor();
-    console.log(this.pageId);
-  },
-  watch: {},
+  }
 };
 </script>
 
@@ -305,6 +306,10 @@ $t-regular: "Gilroy light";
     p {
       cursor: pointer;
     }
+  }
+
+  .nav_menu_s_item:nth-of-type(2) {
+    cursor: pointer;
   }
 }
 
