@@ -461,6 +461,8 @@ canvas {
   min-height: 50px;
   width: auto;
   cursor: pointer;
+  position: relative;
+  visibility: visible;
 }
 p {
   font: 25px Gilroy light;
