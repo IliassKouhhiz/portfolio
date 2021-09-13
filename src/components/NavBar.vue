@@ -51,6 +51,7 @@ export default {
     return {
       nav_button_status: "false",
       resume: false,
+      screen_width: window.innerWidth,
     };
   },
   props: ["navColor", "pageId"],
@@ -117,6 +118,7 @@ export default {
       let nav = document.querySelector(swt(2));
       let err = document.createElement("div");
       let err_p = document.createElement("p");
+      let color = this.navColor;
 
       function errStyle() {
         if (x === "s") {
@@ -133,7 +135,7 @@ export default {
             box-shadow: 1px 1px 20px #636161;
           `;
 
-          if (this.navColor === "yellow") {
+          if (color === "yellow") {
             err.style.backgroundColor = "#f27649";
           }
         } else if (x === "l") {
@@ -180,9 +182,14 @@ export default {
         line1.style.visibility = "visible";
         line2.style.visibility = "visible";
       } else {
-        target_1.setAttribute("href", "/portfolio")
-        target_2.setAttribute("href", "/portfolio")
+        target_1.setAttribute("href", "/portfolio");
+        target_2.setAttribute("href", "/portfolio");
         this.nav_button_status = "false";
+      }
+
+      if (this.screen_width > 768) {
+        line1.style.visibility = "hidden";
+        line2.style.visibility = "hidden";
       }
     },
     about() {
@@ -193,11 +200,28 @@ export default {
       this.nav_button_status = "false";
       line1.style.visibility = "visible";
       line2.style.visibility = "visible";
-    }
+    },
+    closeNav() {
+      let line1 = document.getElementById("line1");
+      let line2 = document.getElementById("line2");
+
+      this.nav_button_status = "false";
+      line1.style.visibility = "visible";
+      line2.style.visibility = "visible";
+
+      if (this.screen_width > 768) {
+        line1.style.visibility = "hidden";
+        line2.style.visibility = "hidden";
+      }
+    },
   },
   mounted() {
     this.changeColor();
-  }
+    window.addEventListener("resize", this.closeNav);
+  },
+  unmounted() {
+    window.removeEventListener("resize", this.closeNav);
+  },
 };
 </script>
 

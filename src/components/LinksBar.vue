@@ -58,6 +58,7 @@ export default {
         },
       ],
       email: "iliass.kouhhiz@gmail.com",
+      screen_width: window.innerWidth,
     };
   },
   props: ["linksColor"],
@@ -86,7 +87,9 @@ export default {
       let icon = document.querySelector("#e-mail");
       icon.style.cursor = "pointer";
       icon.addEventListener("click", () => {
-        var inputc = document.body.appendChild(document.createElement("input"));
+        const inputc = document.body.appendChild(
+          document.createElement("input")
+        );
         inputc.style.cssText = `
           width: 0px;
           height: 0px;
@@ -103,9 +106,47 @@ export default {
         this.openNotification(null, null, `<i class='bx bxs-time'></i>`);
       });
     },
+    showEmail() {
+      let email = this.email;
+      let parent = document.querySelector(".linksBar");
+      let icon = document.querySelector("#e-mail");
+      icon.style.cursor = "pointer";
+
+      function emailMobile() {
+        const notification = document.createElement("div");
+        parent.before(notification);
+        const notification_txt = notification.appendChild(
+          document.createElement("p")
+        );
+        notification_txt.textContent = `${email}`;
+        notification.style.cssText = `
+          width: 100%;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 30px auto;
+          background-color: #f27649;
+          box-shadow: inset 0px 10px 20px #494646;
+        `;
+        notification_txt.style.color = "#0e3b50";
+        setTimeout(() => {
+          notification.remove();
+        }, 4000);
+      }
+
+      icon.addEventListener("click", emailMobile);
+    },
+    device() {
+      if (this.screen_width > 1024) {
+        this.copyEmail();
+      } else {
+        this.showEmail();
+      }
+    },
   },
   mounted() {
-    this.copyEmail();
+    this.device();
   },
 };
 </script>
@@ -118,6 +159,7 @@ export default {
   min-height: 65px;
   max-width: 270px;
   box-shadow: 1px 1px 20px #636161;
+  box-shadow: 1px 1px 20px #494646;
   background-color: #eeeeea;
   border-radius: 35px;
   display: flex;

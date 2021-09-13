@@ -59,6 +59,7 @@ export default {
         },
       ],
       email: "iliass.kouhhiz@gmail.com",
+      screen_width: window.innerWidth,
     };
   },
   props: ["linksColor", "backColor"],
@@ -75,7 +76,6 @@ export default {
 
       text.textContent = "Email address copied to clipboard";
       cont.appendChild(text);
-      console.log("notification");
 
       cont.classList.replace("cont2_hidden", "cont2_visible");
       text.style.cssText = `
@@ -109,10 +109,48 @@ export default {
         this.notification();
       });
     },
+    showEmail() {
+      let email = this.email;
+      let parent = document.querySelector(".footerItem");
+      let icon = document.querySelector("#e-mail-footer");
+      icon.style.cursor = "pointer";
+
+      function emailMobile() {
+        const notification = document.createElement("div");
+        parent.before(notification);
+        const notification_txt = notification.appendChild(
+          document.createElement("p")
+        );
+        notification_txt.textContent = `${email}`;
+        notification.style.cssText = `
+          width: 100%;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 30px auto;
+          background-color: #0e3b50;
+          box-shadow: inset 0px 10px 20px #494646;
+        `;
+        notification_txt.style.color = "#eeeeea";
+        setTimeout(() => {
+          notification.remove();
+        }, 4000);
+      }
+
+      icon.addEventListener("click", emailMobile);
+    },
+    device() {
+      if (this.screen_width > 1024) {
+        this.copyEmail();
+      } else {
+        this.showEmail();
+      }
+    },
   },
   mounted() {
     this.changecolor();
-    this.copyEmail();
+    this.device();
   },
 };
 </script>

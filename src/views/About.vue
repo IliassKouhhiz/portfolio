@@ -64,10 +64,10 @@
         <img src="@\assets\media\available.gif" alt="available" />
       </div>
     </section>
-    <div class="circle-s"></div>
+    <div class="circle-s-about"></div>
     <h2 class="status">Want to know more?</h2>
     <h2 class="cta">Get in touch</h2>
-    <div class="circle-xs"></div>
+    <div class="circle-xs-about"></div>
     <footer-item links-color="blue" back-color="yellow"></footer-item>
   </div>
 </template>
@@ -210,12 +210,12 @@ $t-regular: "Gilroy light";
   text-decoration-line: underline;
 }
 
-.circle-s {
+.circle-s-about {
   background-color: $p-yellow;
   margin-bottom: -60px;
 }
 
-.circle-xs {
+.circle-xs-about {
   margin-top: -20px;
   margin-bottom: 10px;
   background-color: $p-yellow;

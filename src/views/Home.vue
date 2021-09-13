@@ -3,7 +3,7 @@
     <backgroundParticles backColor="orange"></backgroundParticles>
     <header class="header">
       <div @click="logo()">
-        <img src="@\assets\media\logo_orange_S.svg" alt="Logo" class="logo" />
+        <img src="@\assets\media\logo_orange_S.png" alt="Logo" class="logo" />
       </div>
       <nav-bar nav-color="orange" :pageId="id"></nav-bar>
     </header>
@@ -169,7 +169,7 @@ $p: 25px;
   align-items: center;
 
   .logo {
-    min-height: 50px;
+    height: 50px;
     width: auto;
     cursor: pointer;
   }
