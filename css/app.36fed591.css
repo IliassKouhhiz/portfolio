@@ -11,11 +11,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-.navBar[data-v-8decaa1c] {
+.navBar[data-v-ab42a8be] {
   width: 69px;
   height: 69px;
 }
-.nav_s[data-v-8decaa1c] {
+.nav_s[data-v-ab42a8be] {
   position: fixed;
   overflow: hidden;
   z-index: 1;
@@ -32,18 +32,18 @@
   transition: all 1s ease-in-out;
   visibility: hidden;
 }
-.nav_s[data-active="true"][data-v-8decaa1c] {
+.nav_s[data-active="true"][data-v-ab42a8be] {
   visibility: visible;
   clip-path: circle(1200px at 80% 10%);
   -webkit-clip-path: circle(1200px at 80% 10%);
 }
-.nav_s_orange[data-v-8decaa1c] {
+.nav_s_orange[data-v-ab42a8be] {
   background-color: #f27649;
 }
-.nav_s_yellow[data-v-8decaa1c] {
+.nav_s_yellow[data-v-ab42a8be] {
   background-color: #f2b950;
 }
-.nav_button[data-v-8decaa1c] {
+.nav_button[data-v-ab42a8be] {
   z-index: 20;
   width: 69px;
   height: 69px;
@@ -56,29 +56,29 @@
   align-items: center;
   box-shadow: 1px 1px 20px #636161;
 }
-.nav_button .hamburger[data-v-8decaa1c] {
+.nav_button .hamburger[data-v-ab42a8be] {
   height: 19px;
   width: 20px;
   z-index: 20;
 }
-.nav_button .hamburger .line[data-v-8decaa1c] {
+.nav_button .hamburger .line[data-v-ab42a8be] {
   width: 20px;
   height: 3px;
   background-color: #0e3b50;
   z-index: 2;
   border-radius: 5px;
 }
-.nav_button .hamburger .mid[data-v-8decaa1c] {
+.nav_button .hamburger .mid[data-v-ab42a8be] {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.nav_button_orange[data-v-8decaa1c] {
+.nav_button_orange[data-v-ab42a8be] {
   background-color: #f27649;
 }
-.nav_button_yellow[data-v-8decaa1c] {
+.nav_button_yellow[data-v-ab42a8be] {
   background-color: #f2b950;
 }
-.nav_menu_s[data-v-8decaa1c] {
+.nav_menu_s[data-v-ab42a8be] {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,23 +86,23 @@
   height: 400px;
   width: 100vw;
 }
-.nav_menu_s .nav_menu_s_item[data-v-8decaa1c] {
+.nav_menu_s .nav_menu_s_item[data-v-ab42a8be] {
   list-style-type: none;
 }
-.nav_menu_s .nav_menu_s_item a[data-v-8decaa1c],
-.nav_menu_s .nav_menu_s_item p[data-v-8decaa1c] {
+.nav_menu_s .nav_menu_s_item a[data-v-ab42a8be],
+.nav_menu_s .nav_menu_s_item p[data-v-ab42a8be] {
   text-decoration: none;
   font: 5em Gilroy Extra Bold;
   color: #eeeeea;
   margin-bottom: 0;
 }
-#projects_l[data-v-8decaa1c],
-#projects_s[data-v-8decaa1c],
-.nav_menu_s .nav_menu_s_item[data-v-8decaa1c]:nth-of-type(2),
-.nav_menu_s .nav_menu_s_item p[data-v-8decaa1c] {
+#projects_l[data-v-ab42a8be],
+#projects_s[data-v-ab42a8be],
+.nav_menu_s .nav_menu_s_item[data-v-ab42a8be]:nth-of-type(2),
+.nav_menu_s .nav_menu_s_item p[data-v-ab42a8be] {
   cursor: pointer;
 }
-.err[data-v-8decaa1c] {
+.err[data-v-ab42a8be] {
   width: 260px;
   height: 80px;
   position: absolute;
@@ -114,12 +114,12 @@
   align-items: center;
   box-shadow: 1px 1px 20px #636161;
 }
-.err p[data-v-8decaa1c] {
+.err p[data-v-ab42a8be] {
   font: 25px Gilroy light;
   color: #0e3b50;
   text-align: center;
 }
-@-webkit-keyframes nav_animation-8decaa1c {
+@-webkit-keyframes nav_animation-ab42a8be {
   0% {
     width: 0;
     height: 0;
@@ -131,7 +131,7 @@
     transition: all ease-in;
   }
 }
-@keyframes nav_animation-8decaa1c {
+@keyframes nav_animation-ab42a8be {
   0% {
     width: 0;
     height: 0;
@@ -143,25 +143,25 @@
     transition: all ease-in;
   }
 }
-.large_screen[data-v-8decaa1c] {
+.large_screen[data-v-ab42a8be] {
   visibility: hidden;
   width: 0;
   height: 0;
 }
 @media only screen and (min-width: 767px) {
-  .large_screen[data-v-8decaa1c] {
+  .large_screen[data-v-ab42a8be] {
     visibility: visible;
   }
-  .small_screen[data-v-8decaa1c] {
+  .small_screen[data-v-ab42a8be] {
     visibility: hidden;
     width: 0;
     height: 0;
   }
-  .navBar[data-v-8decaa1c] {
+  .navBar[data-v-ab42a8be] {
     width: 320px;
     height: 64px;
   }
-  .nav_menu_l[data-v-8decaa1c] {
+  .nav_menu_l[data-v-ab42a8be] {
     width: 320px;
     height: 64px;
     display: flex;
@@ -170,7 +170,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  .nav_menu_l .circle_nav[data-v-8decaa1c] {
+  .nav_menu_l .circle_nav[data-v-ab42a8be] {
     width: 90px;
     height: 90px;
     border-radius: 65px;
@@ -179,75 +179,76 @@
     align-items: center;
     background-color: transparent;
   }
-  .nav_menu_l .circle_nav a[data-v-8decaa1c],
-  .nav_menu_l .circle_nav p[data-v-8decaa1c] {
+  .nav_menu_l .circle_nav a[data-v-ab42a8be],
+  .nav_menu_l .circle_nav p[data-v-ab42a8be] {
     text-decoration: none;
     font: 20px Gilroy light;
     color: #0e3b50;
     margin-bottom: 0;
   }
-  .nav_menu_l .circle_nav p[data-v-8decaa1c] {
+  .nav_menu_l .circle_nav p[data-v-ab42a8be] {
     cursor: pointer;
   }
-  .nav_menu_l .circle_nav[data-v-8decaa1c]:first-child:hover {
+  .nav_menu_l .circle_nav[data-v-ab42a8be]:first-child:hover {
     transition: all 0.5s ease-in;
   }
-  .nav_menu_l .circle_nav:first-child:hover a[data-v-8decaa1c] {
+  .nav_menu_l .circle_nav:first-child:hover a[data-v-ab42a8be] {
     font: 22px Gilroy Extra Bold;
   }
-  .nav_menu_l .circle_nav[data-v-8decaa1c]:nth-child(2):hover {
+  .nav_menu_l .circle_nav[data-v-ab42a8be]:nth-child(2):hover {
     transition: all 0.5s ease-in;
   }
-  .nav_menu_l .circle_nav:nth-child(2):hover a[data-v-8decaa1c] {
+  .nav_menu_l .circle_nav:nth-child(2):hover a[data-v-ab42a8be] {
     font: 22px Gilroy Extra Bold;
   }
-  .nav_menu_l .circle_nav[data-v-8decaa1c]:last-child:hover {
+  .nav_menu_l .circle_nav[data-v-ab42a8be]:last-child:hover {
     transition: all 0.5s ease-in;
   }
-  .nav_menu_l .circle_nav:last-child:hover p[data-v-8decaa1c] {
+  .nav_menu_l .circle_nav:last-child:hover p[data-v-ab42a8be] {
     font: 22px Gilroy Extra Bold;
   }
-  .nav_menu_l .circle_home[data-v-8decaa1c]:first-child:hover,
-  .nav_menu_l .circle_home[data-v-8decaa1c]:last-child:hover,
-  .nav_menu_l .circle_home[data-v-8decaa1c]:nth-child(2):hover {
+  .nav_menu_l .circle_home[data-v-ab42a8be]:first-child:hover,
+  .nav_menu_l .circle_home[data-v-ab42a8be]:last-child:hover,
+  .nav_menu_l .circle_home[data-v-ab42a8be]:nth-child(2):hover {
     background-color: #f27649;
   }
-  .nav_menu_l .circle_about[data-v-8decaa1c]:first-child:hover,
-  .nav_menu_l .circle_about[data-v-8decaa1c]:last-child:hover,
-  .nav_menu_l .circle_about[data-v-8decaa1c]:nth-child(2):hover {
+  .nav_menu_l .circle_about[data-v-ab42a8be]:first-child:hover,
+  .nav_menu_l .circle_about[data-v-ab42a8be]:last-child:hover,
+  .nav_menu_l .circle_about[data-v-ab42a8be]:nth-child(2):hover {
     background-color: #f2b950;
   }
 }
-.linksBar[data-v-fc06b1b8] {
+.linksBar[data-v-7384d364] {
   width: 75%;
   height: 75px;
   min-width: 250px;
   min-height: 65px;
   max-width: 270px;
   box-shadow: 1px 1px 20px #636161;
+  box-shadow: 1px 1px 20px #494646;
   background-color: #eeeeea;
   border-radius: 35px;
   display: flex;
   align-items: center;
   margin: 5vh auto;
 }
-.linksBar section[data-v-fc06b1b8] {
+.linksBar section[data-v-7384d364] {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: auto;
 }
-.linksBar section .img[data-v-fc06b1b8] {
+.linksBar section .img[data-v-7384d364] {
   width: 5vh;
   min-width: 35px;
   height: 5vh;
   min-height: 35px;
 }
-.linksBar section .img[data-v-fc06b1b8]:hover {
+.linksBar section .img[data-v-7384d364]:hover {
   margin-top: -10px;
   transition: all 0.3s ease-in-out;
 }
-@-webkit-keyframes email_notification-fc06b1b8 {
+@-webkit-keyframes email_notification-7384d364 {
   0% {
     transform: scale(0);
   }
@@ -256,7 +257,7 @@
     transition: all 0.5s ease-in-out;
   }
 }
-@keyframes email_notification-fc06b1b8 {
+@keyframes email_notification-7384d364 {
   0% {
     transform: scale(0);
   }
@@ -265,13 +266,13 @@
     transition: all 0.5s ease-in-out;
   }
 }
-.cont_hidden[data-v-fc06b1b8] {
+.cont_hidden[data-v-7384d364] {
   visibility: hidden;
   width: 0;
   height: 0;
 }
 @media only screen and (max-width: 767px) {
-  .cont_visible[data-v-fc06b1b8] {
+  .cont_visible[data-v-7384d364] {
     visibility: visible;
     position: fixed;
     display: flex;
@@ -282,8 +283,8 @@
     height: 160px;
     border-radius: 80px;
     background-color: #f27649;
-    -webkit-animation-name: email_notification-fc06b1b8;
-    animation-name: email_notification-fc06b1b8;
+    -webkit-animation-name: email_notification-7384d364;
+    animation-name: email_notification-7384d364;
     -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
     -webkit-animation-iteration-count: 1;
@@ -292,7 +293,7 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  .cont_visible[data-v-fc06b1b8] {
+  .cont_visible[data-v-7384d364] {
     visibility: visible;
     position: fixed;
     display: flex;
@@ -303,15 +304,15 @@
     height: 140px;
     border-radius: 70px;
     background-color: #f27649;
-    -webkit-animation-name: email_notification-fc06b1b8;
-    animation-name: email_notification-fc06b1b8;
+    -webkit-animation-name: email_notification-7384d364;
+    animation-name: email_notification-7384d364;
     -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
   }
 }
-.footerItem[data-v-9ae987ea] {
+.footerItem[data-v-6c511a76] {
   height: 250px;
   display: flex;
   align-items: center;
@@ -319,28 +320,28 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.footerItem .h3[data-v-9ae987ea] {
+.footerItem .h3[data-v-6c511a76] {
   color: #0e3b50;
   text-align: center;
   width: 70%;
 }
-.footerItem section[data-v-9ae987ea] {
+.footerItem section[data-v-6c511a76] {
   display: flex;
   justify-content: space-around;
   width: 80%;
   margin: -60px auto 0;
 }
-.footerItem section .img[data-v-9ae987ea] {
+.footerItem section .img[data-v-6c511a76] {
   width: 5vh;
   min-width: 35px;
   height: 5vh;
   min-height: 35px;
 }
-.footerItem section .img[data-v-9ae987ea]:hover {
+.footerItem section .img[data-v-6c511a76]:hover {
   margin-top: -10px;
   transition: all 0.3s ease-in-out;
 }
-@-webkit-keyframes email_notification-9ae987ea {
+@-webkit-keyframes email_notification-6c511a76 {
   0% {
     transform: scale(0);
   }
@@ -349,7 +350,7 @@
     transition: all 0.5s ease-in-out;
   }
 }
-@keyframes email_notification-9ae987ea {
+@keyframes email_notification-6c511a76 {
   0% {
     transform: scale(0);
   }
@@ -358,37 +359,37 @@
     transition: all 0.5s ease-in-out;
   }
 }
-.cont2_hidden[data-v-9ae987ea] {
+.cont2_hidden[data-v-6c511a76] {
   visibility: hidden;
   width: 0;
   height: 0;
 }
 @media only screen and (min-width: 768px) {
-  .footerItem[data-v-9ae987ea] {
+  .footerItem[data-v-6c511a76] {
     width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
   }
-  .footerItem .h3[data-v-9ae987ea] {
+  .footerItem .h3[data-v-6c511a76] {
     color: #0e3b50;
     text-align: center;
     width: 315px;
     margin-top: -10px;
   }
-  .footerItem section[data-v-9ae987ea] {
+  .footerItem section[data-v-6c511a76] {
     display: flex;
     justify-content: space-around;
     width: 40%;
     margin: 30px auto 0;
   }
-  .footerItem section .img[data-v-9ae987ea] {
+  .footerItem section .img[data-v-6c511a76] {
     width: 5vh;
     min-width: 35px;
     height: 5vh;
     min-height: 35px;
   }
-  .cont2_visible[data-v-9ae987ea] {
+  .cont2_visible[data-v-6c511a76] {
     visibility: visible;
     position: fixed;
     display: flex;
@@ -399,8 +400,8 @@
     height: 140px;
     border-radius: 70px;
     background-color: #0e3b50;
-    -webkit-animation-name: email_notification-9ae987ea;
-    animation-name: email_notification-9ae987ea;
+    -webkit-animation-name: email_notification-6c511a76;
+    animation-name: email_notification-6c511a76;
     -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
     -webkit-animation-iteration-count: 1;
@@ -408,7 +409,7 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .cont2_visible[data-v-9ae987ea] {
+  .cont2_visible[data-v-6c511a76] {
     visibility: visible;
     position: fixed;
     display: flex;
@@ -419,8 +420,8 @@
     height: 160px;
     border-radius: 80px;
     background-color: #0e3b50;
-    -webkit-animation-name: email_notification-9ae987ea;
-    animation-name: email_notification-9ae987ea;
+    -webkit-animation-name: email_notification-6c511a76;
+    animation-name: email_notification-6c511a76;
     -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
     -webkit-animation-iteration-count: 1;
